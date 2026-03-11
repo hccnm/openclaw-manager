@@ -29,7 +29,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // 静态文件服务（前端页面）
-const publicDir = path.join(__dirname, 'public');
+const publicDir = path.join(__dirname, '../../20-frontend/code');
 app.use(express.static(publicDir));
 
 // CORS 配置（开发环境）
